@@ -29,7 +29,7 @@ int getSmallFileLenght(const char* filename)
 
 	// The statement below confirms that the file exists and it is not a directory
 	if ((hFind == INVALID_HANDLE_VALUE) ||
-		((FindFileData.dwFileAttributes&FILE_ATTRIBUTE_DIRECTORY) != 0))
+		((FindFileData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == FILE_ATTRIBUTE_DIRECTORY))
 	{
 		printf("\nError. Incorrect file entered as argument\n"); // print error if conditions not met
 		functionReturn = -1;
