@@ -105,8 +105,8 @@ int main(int argc, char* argv[])
 							insertChar += 256;
 						}
 
-						printf("%03d ", insertChar); //print to screen (for debug purposes)
-						fprintf(aFPdestination, "%03d ", insertChar); //insert data to destination file
+						printf("%02x ", insertChar); //print to screen (for debug purposes)
+						fprintf(aFPdestination, "%02x ", insertChar); //insert data to destination file
 
 						// Statement below parses the data to 10 chars per line
 						if (countChars == 10)
